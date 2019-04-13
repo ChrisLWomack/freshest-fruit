@@ -1,0 +1,48 @@
+body{
+  background-image: url('basket.jpg');
+  background-size: auto;
+}
+h3{
+  margin-top: 40px;
+}
+h1{
+  margin-left: 43%;
+  color: white;
+}
+.pics{
+  height: 200px;
+  border: 2px solid black;
+}
+.pics img{
+  height: 100%;
+  width: 30%;
+}
+.pics{
+  background-color: white;
+}
+
+.container{
+  width: 25%;
+  border: 2px solid black;
+  margin-left: 37.5%;
+  background-color: #DF9C43;
+}
+ul{
+  list-style: none;
+}
+.container img{
+  width: 94%;
+  height: 150px;
+}
+.container h3, .container h2{
+  margin-left: 32%;
+}
+.container input{
+  margin-left: 22%;
+}
+.container button{
+  margin-left: 39%;
+}
+.fruits p{
+  margin-left: 36%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freshest Fruit</title>
+  
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+  <h1>Fruitagram</h1>
+
+  <!-- <section class="pics" >
+    <img src="banana.png" alt="">
+    <img src="apple.png" alt="">
+    <img src="pineapple.png" alt="">
+
+  </section> -->
+
+
+  <section class="container">
+
+    <h2>Add a fruit</h2>
+
+    <form action="/fruits" method="POST">
+      <input type="text" placeholder="name" name="fruit">
+      <input type="text" placeholder="place of origin" name="origin">
+      <input type="text" placeholder="description" name="description">
+      <input type="text" placeholder="image link" name="pic" >
+      <button type="submit">Submit</button>
+    </form>
+
+  <h3>Freshest Fruit</h3>
+  <ul class="fruits">
+  <% for(var i=0; i<fruits.length; i++) {%>
+    <li class="message">
+      <p><%= fruits[i].fruit %></p>
+      <p><%= fruits[i].origin %></p>
+      <p><%= fruits[i].description %></p>
+      <img src="<%= fruits[i].pic %>" alt="">
+      <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+      <span><%= fruits[i].thumbUp %></span>
+      <!-- <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  </section>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
